@@ -1,0 +1,179 @@
+<!--This is a comment, ignored by the browser.-->
+<!-- To view this document rendered in a browser: Save, navigate to and Open this file with your desired browser -->
+<!-- Alternatively, right click file name in "Project" pane on the left, click "Copy Full Path", paste the file path in the browser address and hit Enter -->
+<!DOCTYPE html> <!-- Since HTML 5, element <!DOCTYPE html> declares an HTML 5 document -->
+<html lang="en" dir="ltr">
+<!-- Element <html></html> notifies the browser that content between the opening and closing tags is HTML code -->
+<!-- HTML code consists of a head and a body -->
+<head>
+  <!-- Element <head></head> contains webpage (handling) info -->
+  <meta charset="utf-8"> <!-- Element <meta> provides meta (associated) data to the document; character set attribute informs the browser that the webpage is encoded using the standard encoding system UTF-8 -->
+  <!-- https://www.fileformat.info/info/charset/UTF-8/list.htm lists all renderable characters available to a website encoded using the UTF-8 encoding system -->
+  <!-- Encodings are often specialized to languages which use different symbols. A browser rendering with an unintended encoding (character set) results in incorrect character rendering -->
+  <!-- In HTML 5, use standard encoding utf-08 because it correctly encodes all international and Unicode character set (unicode-table.com) symbols and gives a website the maximum chance of being rendered correctly on international browsers -->
+  <!-- Unicode also includes special characters like emojis.  E.g. https://unicode-table.com/en/018A/ provides copyable symbol and HTML-code for a fancy 'D' character -->
+  <!-- &#394 is HTML for symbol Ɗ -->
+  <!-- For more on Unicode and character sets refer to https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/ -->
+  <!-- Examples of meta attributes besides charset:
+        <meta http-equiv="content-security-policy content="default-src 'self'">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="default-style" content="value matching title attribute on a link/style element in the same document">
+        <meta http-equiv="refresh" content="300">
+        <meta name="author" content="David D'Souza">
+        <meta name="description" content="Personal Site of DD">
+        <meta name="keywords" content="keyword1, keyword2,..., keywordN">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        Learn more about element <meta> and its attributes at mdn web docs:
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+    -->
+  <!-- Element <title></title> informs the browser of the document name -->
+  <title>
+    Ɗ &#394's Resume
+  </title>  <!-- To type emojis in Windows 10, click the cursor where the emoji should insert, hit WIN & '.' , click the desired emoji -->
+</head>
+<!-- Indentation is used to show at a glance, which elements/tags are contained inside other ones.
+     E.g. Element <html></html> contains elements <head></head> and <body></body> which are at the same hierarchichal level, and each contain interior elements.
+     Click Packages > Atom Beautify > Beautify to indent entire code.
+  -->
+<body>
+  <img src="Profile Picture.jpg" alt="David D'Souza Profile Image" width="208" height="208"> <!-- Self-closing IMaGe element <img> specifies the image source as either a url, or a location within the website directory -->
+  <!-- If attribute src value is a url, the browser will ping the server hosting the image to download it and display it.  If the hosting server goes down, the image will no longer be available for download and display -->
+  <!-- To remove reliance on other servers, store the appropriate image in the same directory as this HTML file
+       C:\David\Software\Courses\The Complete 2022 Web Development Bootcamp\Web Development\HTML - Personal Site
+    -->
+  <!-- The ALTernative text attribute alt, specifies alternative text to display if a browser can't render the image.  Attribute alt value should contain relevant keywords for SEO purposes -->
+  <!-- For more <img> element attributes, refer to https://www.w3schools.com/tags/tag_img.asp -->
+  <h1>David D'Souza</h1> <!-- The heading element <h#>…</h#>, makes incrementally smaller headings as # progresses from 1 to 6. -->
+  <p>  <!-- Paragraph element <p></p> formats text into a paragraph starting on a new line -->
+    <!-- Element <b></b> styles text as bold -->
+    <strong>B.Eng</strong>:  <!-- strong element <strong></strong> stresses strong importance -->
+    <!-- Element <i></i> styles text as italic -->
+    <em>Biomedical Engineering</em> <!-- emphasis element <em></em> emphasizes/stresses the text to the browser which also italicizes it -->
+    <!-- Good practice recommends that <strong></strong> and <em></em> elements be favoured over <b></b> and <i></i> respectively -->
+    <!-- Read further on <em></em> vs <i></i> at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em#%3Ci%3E_vs._%3Cem%3E -->
+  </p>
+  <table> <!-- Table element <table></table> codes a table -->
+  <!-- Similar to element <html></html>, the table element optionally allows header, body and footer sections, so these sections can by styled differently -->
+  <!-- Styling attributes of Table element <table></table> at MDN Web Docs have an adjacent trash icon to indicate that they are deprecated (down-graded) because HTML is for structure, CSS is for styling and JavaScript is for behaviour -->
+  <!-- Refer to MDN Web Docs on Tables at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table -->
+    <thead> <!-- Table Head(er) element <thead></thead> codes table header and bolds table title by default -->
+      <tr>  <!-- Table Row element <tr></tr> codes a new table row -->
+        <th>Contact</th>  <th>Information</th> <!-- Table Head(er) element <th></th> codes a table header cell -->
+      </tr>
+    </thead>
+    <tbody> <!-- Table Body element <tbody></tbody> -->
+      <tr>
+        <td>Phone:</td> <td>+1 234 567 8910</td> <!-- Table Data element <td></td> -->
+      </tr>
+      <tr>
+        <td>Email:</td> <td>email@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Residence:</td> <td>Canada</td>
+      </tr>
+    </tbody>
+    <tfoot> <!-- Table Foot(er) element <tfoot></tfoot> -->
+      <!-- HTML tables typically only include a header and a body section -->
+    </tfoot>
+  </table>
+  <p>
+    Or send a <a href="contact.html" target="_blank">message</a>.
+  </p>
+  <hr>  <!-- Horizontal Rule <hr> element -->
+  <h3>Profile</h3>
+  <p> <!-- Start a new paragraph on a new line -->
+    Passionate engineer seeking to solve meaningful problems, produce desirable results and make a net contribution to society.
+  </p>
+  <hr>  <!-- Horizontal Rule <hr> element -->
+  <h3>Education & Experience</h3>
+  <ul>  <!-- Unordered List element <ul></ul> codes an indented, bulleted list, as opposed to an alphabetical/numerical ordered list -->
+    <!-- HyperText in HTML refers to text documents hyperlinked together so when a link is clicked, it takes you to the target text document -->
+    <!-- Anchor element <a></a> has attribute Hyperlink REFerence href with value of the link destination url -->
+    <!-- Read more about the Anchor element and its attributes at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a -->
+    <li>R&D Engineer, <a href="https://altanrobotech.com/" target="_blank">Altan Robotech Inc.</a> | 2017-Present </li> <!-- List Item tag codes a bullet point -->
+      <ul>  <!-- Nested unordered list -->
+        <li>Projects</li>
+          <!-- (Nested) Ordered List element <ol></ol> codes a numbered list -->
+          <ol type="I" start="1">  <!-- <ol></ol> attribute type="1|A|a|I|i" for numbers (default), uppercase letters, lowercase letters, uppercase roman numberals, lowercase roman numerals respectively -->
+                                   <!-- <ol></ol> attribute start="#" codes ordered list to start counting from # (1 by default) -->
+            <li>Giddel: Patented, World's First Toilet Cleaning Robot, Winner of Twice Picks Award CES 2018</li>
+            <li>Automatic Cooking Robot (shelved)</li>
+            <li>uvFreshr Mini, Germ & Pod: UVC Germicidal Light Devices</li>
+          </ol>
+        <li>Project Responsibilities (in chronological order)</li>
+          <ul>
+            <li>Research & document applicable market, certification & legal requirements to define project scope, specifications and constraints.</li>
+            <li>Brainstorm and evaluate designs theoretically using computation and analysis e.g., inverse kinematics, UVC Dose etc.</li>
+            <li>Research, procure/design, test, log and evaluate appropriate electronic components such as sensors, actuators, MCUs, RLC, wires etc.</li>
+            <li>Software development (primary responsibility).</li>
+            <li>Assemble, test & iterate prototypes/products for functionality, efficacy, safety & durability.</li>
+            <li>Manage 3rd party testing and certification</li>
+            <li>Write & maintain Manuals, Quality Assurance & Control specifications for mass production.</li>
+            <li>Customer troubleshooting and product returns/random sample inspection.</li>
+          </ul>
+      </ul>
+  </ul>
+  <ul>
+    <li>B.Eng: Biomedical Engineering, Toronto Metropolitan (formerly Ryerson) University</li>
+      <ul>
+        <li>Projects</li>
+          <ul>
+            <li>Capstone: Design, implement and test a neurosurgical drill training system to monitor force and vibration associated with a craniotomy in real time.</li>
+            <li>Diagnostic image segmentation and pixel classification on brain MRI and mammary US images.</li>
+            <li>Code an obstetrical triage register software system to handle admission of patients to an obstetrical triage.</li>
+            <li>Simulate analog/digital systems in simulation software and validate outputs.</li>
+          </ul>
+      </ul>
+  </ul>
+  <hr>  <!-- Horizontal Rule <hr> element -->
+  <h3>Skills</h3>
+  <ul>
+    <li>
+      Software Development Life Cycle in:
+      <table cellspacing='1'>
+        <tr>
+          <td>C</td>      <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>  <!-- HTML code for ★ is &#9733; -->
+          <td>C++</td>    <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>  <!-- HTML code for ☆ is &#9734; -->
+          <td>Java</td>   <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+          <td>Arduino</td><td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+        </tr>
+        <tr>
+          <td>HTML 5</td> <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+          <td>Perl</td>   <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+        </tr>
+      </table>
+    </li>
+    <li>Research & Development</li>
+    <li>MATLAB & Simulink</li>
+    <li>Analog & Digital Circuit Design & Analysis</li>
+    <li>Data Acquisition, Signal Conditioning, ADC</li>
+    <li>Program Hardware (Microcontrollers)</li>
+    <li>Concept & Human-Computer Interface Design</li>
+    <li>Testing, Troubleshooting, Documentation, Iteration</li>
+    <li>Quality Management</li>
+    <li>3rd Party Testing & Certification and more...</li>
+  </ul>
+  <hr>  <!-- Horizontal Rule <hr> element -->
+  <h3>References</h3>
+  <p>
+    <!-- Create "cover.html" in same folder as index.html, so you don't have to specify the exact path -->
+    For References, please refer to my <a href="cover.html" target="_blank">Cover Letter</a>.
+  </p>
+</body>
+</html>
+<!--GitHub:
+    To upload to GitHub, login, click on the '+' button in the upper-right corner & click "New repository".
+    give this cloud-hosted folder a "Repository name", select "Public" or "Private" access.
+    Intialize this repository with a README file by checking "Add a README file and click "Create repository".
+    Click "Add file", select "Upload file", then select "choose your files", navigate to, select and upload all desired files.
+    Under "Commit changes", name this version of the software, e.g., "Added initial CV website files".
+    Click "Commit changes"
+
+    Under the "Settings" tab, select "Pages".  GitHub pages is designed to host personal,organization or project pages from a GitHub repository
+    To enable GitHub Pages, under "Source", select the drop-down menu and select "main" as the branch and click "Save".
+    GitHub will publish to the link https://username.github.io/projectname/
+    Note: GitHub will look for file "index.html" (case-sensitive) to use as the Home page.
+    If <!DOCTYPE html> appears in published website, delete it from GitHub file copy.
+    After editing a file, under "Commit changes", write a message for the change and click, "Commit changes"
+
+  -->

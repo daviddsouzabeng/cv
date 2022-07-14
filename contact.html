@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+</head>
+<body>
+  <h1>Contact</h1>
+  <p>Feel free to send your message below:</p>
+  <hr>
+  <!-- Form element <form></form> contains different input elements such as text fields, checkboxes, radio buttons, submit buttons etc. -->
+  <!-- Read more about HTML forms at https://www.w3schools.com/html/html_forms.asp -->
+  <form class="" action="mailto:daviddsouzabeng@gmail.com" method="post"> <!-- Form element Action attribute action="" specifies the action to be taken when the submit button is pressed -->
+  <!-- Form action="mailto:" opens default mail client and enters the email address after the colon ':' -->
+    <table>
+      <tr>
+        <td>
+          <label>Name:</label> <!-- Label element <label></label> labels many form elements -->
+        </td>
+        <td>
+          <input type="text" name="" value=""> <!-- HTML self-closing Input element Type attribute <input type="button|checkbox|color|date|datetime-local|email|file|hidden|image|month|number|password|radio|range|reset|search|submit|tel|text[default]|time|url|week"> specifies the input type to display -->
+        </td>
+      <tr>
+      <!-- Input restriction attributes -->
+      <!-- Read more about HTML Input Types at https://www.w3schools.com/html/html_form_input_types.asp -->
+      <tr>
+        <td>
+          <label>Email:</label>
+        </td>
+        <td>
+          <input type="email">  <!-- Type attribute value "email" performs basic email address validation -->
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Phone:</label>
+        </td>
+        <td>
+          <input type="tel">
+        </td>
+        <td>
+          <label>Ext:</label>
+          <input type="text">
+        </td>
+        <td>
+          <label>Cell</label>
+          <input type="radio">
+        </td>
+        <td>
+          <label>Home</label>
+          <input type="radio">
+        </td>
+        <td>
+          <label>Work</label>
+          <input type="radio">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Website:</label>
+        </td>
+        <td>
+          <input type="url">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Message:</label>
+        </td>
+        <td>
+          <textarea rows="7" cols="20"></textarea> <!-- Textarea Element -->
+        </td>
+      </tr>
+    </table>
+    <br>
+    <input type="submit">
+  </form>
+
+  <!-- Test Form -->
+  <br><br>
+  <form action="mailto:daviddsouzabeng@gmail.com" method="post" enctype="text/plain">
+    <label>Text Message:</label>
+    <input type="text" name="Message">
+    <br>
+    <input type="submit">
+  </form>
+  <!-- Test Form Successful -->
+
+</body>
+</html>
